@@ -48,3 +48,46 @@ copio la cartella dei webfont:
 
 
 $fa-font-path: "../fonts/font-awesome" !default;
+
+
+
+# laravel-seeder-factory-command
+
+## Descrizione:
+
+Dovrai realizzare un progetto utilizzando Laravel che visualizzi delle card per dei prodotti nella homepage. 
+
+I prodotti saranno generati ed inseriti in un apposito database sulla base delle specifiche fornite ed avranno una categoria associata.
+
+Le categorie saranno generate a partire da un file CSV.
+ 
+### Milestone 1
+Realizza un nuovo progetto Laravel. Completa lo scaffolding e la procedura di inizializzazione di un nuovo progetto. Installa SASS e Bootstrap e le altre dipendenze potenzialmente necessarie (non ci sarà bisogno di autenticazione).
+
+### Milestone 2
+Realizza le migration per le risorse. Non dimenticare: la categoria sarà necessariamente associata ad un prodotto.
+
+Ogni prodotto sarà strutturato come di seguito:
+- id
+- nome
+- descrizione
+- immagine: url ad un’immagine del prodotto
+- codice EAN: codice numerico di identificazione internazionale a 13 cifre
+- prezzo
+- in evidenza: stato “in evidenza” del prodotto (attivo o disattivo)
+- data di creazione
+- data di ultima modifica
+
+Ogni categoria sarà strutturata come di seguito:
+- id
+- nome
+- colore: codice esadecimale del colore
+
+### Milestone 3
+Realizza i modelli per le risorse. Non dimenticare di rappresentare la relazione esistente tra prodotti e categorie. 
+
+Realizza poi i seeder per le risorse. 
+
+I dati dei prodotti dovranno essere generati con Faker. Dovranno essere generati 100 prodotti fittizi, di cui solo 5 in evidenza.
+
+I dati delle categorie dovranno essere letti direttamente dal file CSV (vedi materiale aggiuntivo).
