@@ -1,9 +1,9 @@
 @php
 
-//dd($menu);   
+    //dd($menu);
 @endphp
 <header>
- 
-<h2>Pippo Header</h2>
+
+    <h2 class="text-danger">Pippo Header</h2>
 
 </header>
