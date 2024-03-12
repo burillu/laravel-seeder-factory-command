@@ -61,10 +61,10 @@ I prodotti saranno generati ed inseriti in un apposito database sulla base delle
 
 Le categorie saranno generate a partire da un file CSV.
  
-### Milestone 1
+### Milestone 1 (30')
 Realizza un nuovo progetto Laravel. Completa lo scaffolding e la procedura di inizializzazione di un nuovo progetto. Installa SASS e Bootstrap e le altre dipendenze potenzialmente necessarie (non ci sarà bisogno di autenticazione).
 
-### Milestone 2
+### Milestone 2 (1h)
 Realizza le migration per le risorse. Non dimenticare: la categoria sarà necessariamente associata ad un prodotto.
 
 Ogni prodotto sarà strutturato come di seguito:
@@ -83,7 +83,7 @@ Ogni categoria sarà strutturata come di seguito:
 - nome
 - colore: codice esadecimale del colore
 
-### Milestone 3
+### Milestone 3 (1.5h)
 Realizza i modelli per le risorse. Non dimenticare di rappresentare la relazione esistente tra prodotti e categorie. 
 
 Realizza poi i seeder per le risorse. 
