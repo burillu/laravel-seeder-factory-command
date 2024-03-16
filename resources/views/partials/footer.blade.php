@@ -1,11 +1,9 @@
 @php
-    
+
 @endphp
 
 <footer>
-  
-    <h2>Pippo footer</h2>
-   
+
+    <h2>footer</h2>
+
 </footer>
-    
-    
