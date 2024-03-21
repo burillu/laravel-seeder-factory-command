@@ -12,7 +12,7 @@ class UpdateProducts extends Command
      *
      * @var string
      */
-    protected $signature = 'products:update-featured';
+    protected $signature = 'products:update-featured {--random}';
 
     /**
      * The console command description.
@@ -31,13 +31,26 @@ class UpdateProducts extends Command
         //prendo i prodotti sponsorizzati
         $featured = Product::where('sponsored',1)->get();
         //dd($featured);
-        $newprice = 1 - 0.01;
-        foreach($featured as $key => $product){
+        //dd($this->option('random'));
+        //vedo se c'è l'opzione --random
+        if($this->option('random')){
+            foreach($featured as $key => $product){
+                $newprice =rand(1,100) - 0.01;
+                $product->price = $newprice ;
+                $product->category_id = rand(1, count($featured));
+                $product->save();
+            };
+        }else{
+            $newprice = 1 - 0.01;
+            foreach($featured as $key => $product){
             $newprice +=10;
             $product->price = $newprice ;
             $product->category_id = $key+1;
             $product->save();
         };
+        }
+        
+        
          //dd($featured);
          
         $this->line('Featured Products has been updates');
