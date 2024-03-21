@@ -113,7 +113,7 @@ Popola la tabella dei prodotti utilizzando una apposita Factory.
 
 Troverai delle delucidazioni su cosa sia una Factory nella sezione References di questo Kata e nella doc di Laravel: https://laravel.com/docs/9.x/eloquent-factories
 
-### Milestone 4 (3h)
+### Milestone 4 (2/3h)
 Realizza un Command personalizzato aggiornare i prodotti in evidenza direttamente dal terminale via artisan. 
 
 Il comando da lanciare sarà: php artisan products:update-featured

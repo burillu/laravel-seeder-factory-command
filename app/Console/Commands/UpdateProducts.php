@@ -38,8 +38,13 @@ class UpdateProducts extends Command
             $product->category_id = $key+1;
             $product->save();
         };
-         dd($featured);
-
+         //dd($featured);
+         
+        $this->line('Featured Products has been updates');
+         $this->table(
+             ['Name', 'Price'],
+             Product::where('sponsored',1)->get(['name','price'])->toArray()
+         );
         return Command::SUCCESS;
     }
 }
