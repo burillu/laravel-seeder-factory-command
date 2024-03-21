@@ -53,7 +53,8 @@ $fa-font-path: "../fonts/font-awesome" !default;
 
 # laravel-seeder-factory-command
 
-## Descrizione:
+## 1 Parte
+### Descrizione:
 
 Dovrai realizzare un progetto utilizzando Laravel che visualizzi delle card per dei prodotti nella homepage. 
 
@@ -91,3 +92,30 @@ Realizza poi i seeder per le risorse.
 I dati dei prodotti dovranno essere generati con Faker. Dovranno essere generati 100 prodotti fittizi, di cui solo 5 in evidenza.
 
 I dati delle categorie dovranno essere letti direttamente dal file CSV (vedi materiale aggiuntivo).
+
+## 2 Parte
+### Descrizione:
+
+I Featured Products (prodotti in evidenza) dovranno essere visualizzati in cards nella homepage del progetto.
+
+La generazione dei prodotti dovrà avvenire tramite l’utilizzo delle Factories nei Seeder.
+
+I Featured Products dovranno essere aggiornati con un Command personalizzato. 
+
+### Milestone 1
+Realizza le rotte ed il controller necessario per visualizzare la lista ed il dettaglio dei prodotti. In questa fase si possono visualizzare i dati in forma grezza (senza grafica).
+
+### Milestone 2 
+Realizza la pagina della lista (in cards) e del dettaglio del prodotto. Ricorda di mostrare sempre la categoria di ogni prodotto. A questo punto, se vuoi, puoi aggiungere un po’ di grafica.
+
+### Milestone 3 (3h)
+Popola la tabella dei prodotti utilizzando una apposita Factory. 
+
+Troverai delle delucidazioni su cosa sia una Factory nella sezione References di questo Kata e nella doc di Laravel: https://laravel.com/docs/9.x/eloquent-factories
+
+### Milestone 4 (3h)
+Realizza un Command personalizzato aggiornare i prodotti in evidenza direttamente dal terminale via artisan. 
+
+Il comando da lanciare sarà: php artisan products:update-featured
+
+>Attenzione: il comando risulterà not defined finché non verrà realizzato il Command.
