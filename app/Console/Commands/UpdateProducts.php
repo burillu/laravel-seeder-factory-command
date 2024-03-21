@@ -19,7 +19,9 @@ class UpdateProducts extends Command
      *
      * @var string
      */
-    protected $description = 'Update Featured Products changing price and related category';
+    protected $description = 'Update Featured Products changing price from 19.99 to 59.99. Category will be use all.
+    --random option will update featured products in random price and category  
+    ';
 
     /**
      * Execute the console command.
