@@ -108,7 +108,7 @@ Realizza le rotte ed il controller necessario per visualizzare la lista ed il de
 ### Milestone 2 
 Realizza la pagina della lista (in cards) e del dettaglio del prodotto. Ricorda di mostrare sempre la categoria di ogni prodotto. A questo punto, se vuoi, puoi aggiungere un po’ di grafica.
 
-### Milestone 3 (3h)
+### Milestone 3 (2.5/3h)
 Popola la tabella dei prodotti utilizzando una apposita Factory. 
 
 Troverai delle delucidazioni su cosa sia una Factory nella sezione References di questo Kata e nella doc di Laravel: https://laravel.com/docs/9.x/eloquent-factories
