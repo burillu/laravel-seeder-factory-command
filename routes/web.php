@@ -18,3 +18,7 @@ use App\Http\Controllers\ProductController;
 //     return view('home');
 // });
 Route::get('/', [ProductController::class, 'index'])->name('products.index');
+Route::resource('products', ProductController::class)->parameters([
+    'products' => 'product:name'
+])->except('index','create','edit','store');;
+//Route::get('/products/{$id}', [ProductController::class, 'show'])->name('products.show');

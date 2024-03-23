@@ -12,4 +12,7 @@ class ProductController extends Controller
         $products = Product::where('sponsored', 1)->get();
         return view('products.index', compact('products'));
     }
+    public function show(Product $product){
+        return view('products.show', compact('product'));
+    }
 }
