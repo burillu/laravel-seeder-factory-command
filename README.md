@@ -105,7 +105,7 @@ I Featured Products dovranno essere aggiornati con un Command personalizzato.
 ### Milestone 1
 Realizza le rotte ed il controller necessario per visualizzare la lista ed il dettaglio dei prodotti. In questa fase si possono visualizzare i dati in forma grezza (senza grafica).
 
-### Milestone 2 
+### Milestone 2 (1.5h)
 Realizza la pagina della lista (in cards) e del dettaglio del prodotto. Ricorda di mostrare sempre la categoria di ogni prodotto. A questo punto, se vuoi, puoi aggiungere un po’ di grafica.
 
 ### Milestone 3 (2.5/3h)
