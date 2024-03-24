@@ -21,6 +21,8 @@
                     <p class="mb-5">
                         {{ $product->description }}
                     </p>
+                    <a href="{{ route('products.index') }}" class="btn btn-primary"><i
+                            class="fa-solid fa-arrow-left"></i></a>
 
 
 

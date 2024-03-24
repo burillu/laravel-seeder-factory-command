@@ -15,7 +15,7 @@
                             <h6 style="color:{{ $item->category->color }}">{{ $item->category->name }} </h6>
                             <p class="card-text">{{ $item->truncateDescription() }}</p>
                             <h5>$ {{ $item->price }}</h5>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <a href="{{ route('products.show', $item->name) }}" class="btn btn-primary">Details</a>
                         </div>
                     </div>
                 </div>
