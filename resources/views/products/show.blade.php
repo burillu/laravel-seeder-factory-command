@@ -4,6 +4,7 @@
 
 @section('content')
     <div class="container">
+        <a href="{{ route('products.index') }}" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i></a>
         <h2>{{ $product->name }} </h2>
         <div class="container">
             <div class="row mb-5">
@@ -14,15 +15,17 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div>
-                        <h4>Type : <span style="color: {{ $product->category->color }}">{{ $product->category->name }}</span>
+                        <h4>Type : <span
+                                style="color: {{ $product->category->color }}">{{ $product->category->name }}</span>
                         </h4>
                     </div>
                     <h5>Description:</h5>
                     <p class="mb-5">
                         {{ $product->description }}
                     </p>
-                    <a href="{{ route('products.index') }}" class="btn btn-primary"><i
-                            class="fa-solid fa-arrow-left"></i></a>
+                    <div>Price:</div>
+                    <h5>&euro; {{ $product->price }}</h5>
+
 
 
 

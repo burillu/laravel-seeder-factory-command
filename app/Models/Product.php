@@ -16,6 +16,6 @@ class Product extends Model
     }
     public function truncateDescription()
     {
-        return substr($this->description , 0 , 35) . '...';
+        return substr($this->description , 0 , 25) . '...';
     }
 }

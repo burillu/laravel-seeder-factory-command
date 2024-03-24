@@ -5,7 +5,7 @@
 @section('content')
     <div class="container">
         <h2>Featured Products({{ count($products) }})</h2>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-between">
             @foreach ($products as $item)
                 <div class="col-12 col-md-6 col-lg-4 col-xl-2 ">
                     <div class="card">
